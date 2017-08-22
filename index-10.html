@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>10 Handlebars training: Custom Helpers Part 1 - Expressions</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<h2>Demo</h2>
+		<ul class="character-list-container"></ul>
+
+		<script id="character-template" type="text/x-handlebars-template">
+			{{#each characters}}
+			{{!-- use "this" for object have is array --}}
+			<li class="character">
+				<h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
+				<p>{{formatName name house.seat}}</p>
+				<p>{{formatPhoneNumber house.phone}}</p>
+				<p>Actor: {{actor}}</p>
+				{{#with house}}
+				<p>House: {{name}}</p>
+				<p>Seat: {{seat}}</p>
+				<p>Words: {{words}}</p>
+				{{/with}}
+				{{#if location}}<p>Location:  {{location}} {{else}} unknown </p> {{/if}}
+				{{#unless location}}Location are unknown....{{/unless}}
+			</li>
+			{{/each}}
+		</script>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="js/scripts.js"></script>
+</body>
+</html>

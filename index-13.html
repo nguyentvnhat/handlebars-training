@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>12 Handlebars training: Event Delegation</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<h2>Demo</h2>
+		<ul class="character-list-container"></ul>
+
+		<script id="character-template" type="text/x-handlebars-template">
+			{{#each characters}}
+			{{!-- use "this" for object have is array --}}
+			<li class="character">
+				<div class="character-details"> 
+					<h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
+					<p>{{formatName name house.seat}}</p>
+					<p>{{formatPhoneNumber house.phone}}</p>
+					<p>Actor: {{actor}}</p>
+					{{#with house}}
+					<p>House: {{#makeBold}}{{name}}{{/makeBold}}</p>
+					<p>Seat: {{seat}}</p>
+					<p>Words: {{words}}</p>
+					{{/with}}
+					{{#if location}}<p>Location:  {{#toLower}}{{location}}{{/toLower}} {{else}} unknown </p> {{/if}}
+					{{#unless location}}Location are unknown....{{/unless}}
+				</div>
+				<a href="#" class="button view-details">View Details</a>
+			</li>
+			{{/each}}
+		</script>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="js/scripts.js"></script>
+</body>
+</html>

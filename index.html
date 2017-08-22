@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>13-1 Handlebars Training: Drilling into data - Refactor</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<h2>Demo</h2>
+		<ul class="character-list-container"></ul>
+
+		<script id="character-template" type="text/x-handlebars-template">
+			{{#each characters}}
+			{{!-- use "this" for object have is array --}}
+			<li class="character">
+				{{> characterDetailsPartial}}
+				<a href="/cast-details.html?id={{@index}}"  class="button view-details">View Details</a>
+			</li>
+			{{/each}}
+		</script>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<script src="js/scripts.js"></script>
+
+</body>
+</html>
+{{!-- https://www.youtube.com/watch?v=-wbr9rnMwkk&list=PLtV5RF44Yj8S4RcpQehL-2XMuVsJXwNvK&index=16 --}}

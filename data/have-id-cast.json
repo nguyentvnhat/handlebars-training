@@ -1,0 +1,58 @@
+{
+	"characters": [
+		{
+			"id": 0,
+			"name": "Nhat Nguyen",
+			"actor": "Ruby Developer",
+			"house": {
+				"name": "ABC",
+				"seat": "Bakery",
+				"words": "winter is comming...",
+				"phone": 123456789
+			},
+			"location": "Vung Tau",
+			"bio": "1Lorem Ipsum is simply dummy text of the printing and typesetting industry. it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		},
+		{
+			"id": 1,
+			"name": "Richard Nguyen",
+			"actor": "PHP Developer",
+			"house": {
+				"name": "ABC1",
+				"seat": "Bakery1",
+				"words": "winter1 is comming...",
+				"phone": 456789123
+			},
+			"location": "Ho Chi Minh City",
+			"bio": "2Lorem Ipsum is simply dummy text of the printing and typesetting induandard duhen an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		},
+		{
+			"id": 2,
+			"name": "Jason Nguyen",
+			"actor": "Web Developer",
+			"house": {
+				"name": "ABC2",
+				"seat": "Bakery2",
+				"words": "winter2 is comming...",
+				"phone": 789456123
+			},
+			"location": null,
+			"bio": "3Lorem Ipsum is simpl centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		},
+		{
+			"id": 3,
+			"name": "Obama",
+			"actor": "Goverment",
+			"house": {
+				"name": "ABC3",
+				"seat": "Bakery3",
+				"words": "winter is comming...",
+				"phone": 456123789
+			},
+			"location": false,
+			"bio": "4Lorem Ipsum is simpl centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+		}
+
+	]
+}

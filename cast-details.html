@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>13 Handlebars Training: Drilling into data</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-cast-details">
+		<h2>Demo | Cart Details</h2>
+		<section class="character-list-container">
+			
+		</section>
+
+		<script id="character-template" type="text/x-handlebars-template">
+			<li class="character">
+				{{> characterDetailsPartial}}
+				<div class="character-bio-continer">
+					<p><storng>Bio:</storng>{{bio}}</p>
+				</div>
+				<a href="index.html" class="button view-details">Back</a>
+			</li>
+		</script>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<script src="js/scripts.js"></script>
+</body>
+</html>

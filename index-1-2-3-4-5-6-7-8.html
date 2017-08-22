@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Learn Handlebars</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<h2>Demo</h2>
+		<ul class="character-list-container"></ul>
+
+		<script id="character-template" type="text/x-handlebars-template">
+			{{#each characters}}
+			{{!-- use "this" for object have is array --}}
+			<li class="character">
+				<h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
+				<p>Actor: {{actor}}</p>
+				<p>House: {{house.name}}</p>
+				<p>Seat: {{house.seat}}</p>
+				<p>Words: {{house.words}}</p>
+				{{!-- <p>Location: {{#if location}} {{location}} {{else if house}} {{house}} {{else}} unknown {{/if}}</p> --}}
+				{{#if location}}<p>Location:  {{location}} {{else}} unknown </p> {{/if}}
+				{{#unless location}}Location are unknown....{{/unless}}
+			</li>
+			{{/each}}
+		</script>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="js/scripts.js"></script>
+</body>
+</html>
